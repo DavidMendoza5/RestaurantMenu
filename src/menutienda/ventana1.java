@@ -126,7 +126,7 @@ public class ventana1 extends javax.swing.JFrame {
 
         CheckBoxhamburg.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         CheckBoxhamburg.setForeground(new java.awt.Color(204, 51, 0));
-        CheckBoxhamburg.setText("Hamburguesa Long Rodeo");
+        CheckBoxhamburg.setText("Hamburguesa ");
         CheckBoxhamburg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CheckBoxhamburgActionPerformed(evt);
@@ -137,23 +137,34 @@ public class ventana1 extends javax.swing.JFrame {
         CheckBoxDogo.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         CheckBoxDogo.setForeground(new java.awt.Color(204, 51, 0));
         CheckBoxDogo.setText("Super HotDog");
+        CheckBoxDogo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CheckBoxDogoActionPerformed(evt);
+            }
+        });
         getContentPane().add(CheckBoxDogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, 20));
-        getContentPane().add(txtPrecioHamburg, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 60, -1));
+
+        txtPrecioHamburg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPrecioHamburgActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtPrecioHamburg, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, 60, -1));
 
         txtPrecioDogo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPrecioDogoActionPerformed(evt);
             }
         });
-        getContentPane().add(txtPrecioDogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 110, 60, -1));
+        getContentPane().add(txtPrecioDogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 110, 60, -1));
 
         jLabel3.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel3.setText("$20.00");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel4.setText("$15.00");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 120, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, -1, -1));
 
         CheckBoxQCQ.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         CheckBoxQCQ.setForeground(new java.awt.Color(255, 51, 51));
@@ -185,67 +196,67 @@ public class ventana1 extends javax.swing.JFrame {
                 txtSodaPrecioActionPerformed(evt);
             }
         });
-        getContentPane().add(txtSodaPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, 80, -1));
+        getContentPane().add(txtSodaPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 80, 80, -1));
 
         txtQCQprecio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtQCQprecioActionPerformed(evt);
             }
         });
-        getContentPane().add(txtQCQprecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 110, 80, -1));
+        getContentPane().add(txtQCQprecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 110, 80, -1));
 
         txtQSQprecio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtQSQprecioActionPerformed(evt);
             }
         });
-        getContentPane().add(txtQSQprecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, 80, -1));
+        getContentPane().add(txtQSQprecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 140, 80, -1));
 
         txtBurrito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBurritoActionPerformed(evt);
             }
         });
-        getContentPane().add(txtBurrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, 80, -1));
+        getContentPane().add(txtBurrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 170, 80, -1));
 
         jLabel5.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel5.setText("$ 25.00");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 80, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 80, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel6.setText("$ 35.00");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 110, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel7.setText("$ 30.00");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 140, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 140, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel8.setText("$ 125.00");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 170, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, -1, -1));
 
         txtGrill.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtGrillActionPerformed(evt);
             }
         });
-        getContentPane().add(txtGrill, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 200, 80, -1));
+        getContentPane().add(txtGrill, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 200, 80, -1));
 
         jLabel9.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
         jLabel9.setText("$ 700.00");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 200, -1, 20));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 200, -1, 20));
 
-        jLabel10.setFont(new java.awt.Font("Marker Felt", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel10.setFont(new java.awt.Font("Marker Felt", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(102, 0, 0));
         jLabel10.setText("Total a Pagar :$");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 240, -1, 20));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, -1, -1));
 
         txtBill.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBillActionPerformed(evt);
             }
         });
-        getContentPane().add(txtBill, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, 90, 20));
+        getContentPane().add(txtBill, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 240, 90, 20));
 
         getBill.setFont(new java.awt.Font("Marker Felt", 1, 14)); // NOI18N
         getBill.setText("Obtener el Total a pagar");
@@ -254,7 +265,7 @@ public class ventana1 extends javax.swing.JFrame {
                 getBillActionPerformed(evt);
             }
         });
-        getContentPane().add(getBill, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, -1, -1));
+        getContentPane().add(getBill, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, -1, -1));
 
         BtnLeave.setFont(new java.awt.Font("Marker Felt", 1, 14)); // NOI18N
         BtnLeave.setText("Salir de la App");
@@ -263,7 +274,7 @@ public class ventana1 extends javax.swing.JFrame {
                 BtnLeaveActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnLeave, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 350, -1, -1));
+        getContentPane().add(BtnLeave, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 350, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/foto1.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 400));
@@ -304,12 +315,14 @@ public class ventana1 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtGrillActionPerformed
 
     private void getBillActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_getBillActionPerformed
-        // TODO add your handling code here:
+        
         if(RBtn1.isSelected()){
             double total=0;
             if(CheckBoxhamburg.isSelected()){
                 double x = Double.parseDouble(txtPrecioHamburg.getText());
                 total = pHamburg*x;
+            } else{
+                total = 0;
             }
             if(CheckBoxDogo.isSelected()){
                 double y = Double.parseDouble(txtPrecioDogo.getText());
@@ -491,6 +504,18 @@ public class ventana1 extends javax.swing.JFrame {
     private void RBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBtn1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_RBtn1ActionPerformed
+
+    private void txtPrecioHamburgActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPrecioHamburgActionPerformed
+        if(txtPrecioHamburg.getText() != ""){
+            CheckBoxhamburg.setSelected(true);
+        }
+    }//GEN-LAST:event_txtPrecioHamburgActionPerformed
+
+    private void CheckBoxDogoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CheckBoxDogoActionPerformed
+        if(txtPrecioDogo.getText() != ""){
+            CheckBoxDogo.setSelected(true);
+        }
+    }//GEN-LAST:event_CheckBoxDogoActionPerformed
 
     /**
      * @param args the command line arguments
