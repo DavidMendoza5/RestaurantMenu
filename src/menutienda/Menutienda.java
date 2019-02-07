@@ -10,6 +10,7 @@ public class Menutienda {
         v1.setVisible(true);
         v1.setLocationRelativeTo(null);
         v1.setTitle("Food&Drink");
+            
     }
     
 }
